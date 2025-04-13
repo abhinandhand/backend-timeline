@@ -1,8 +1,35 @@
 "use strict";
 import express, { Request, Response } from "express";
 import bodyParser from "body-parser";
+import cors from "cors";
 
 const app = express();
+
+// Define allowed origins
+const allowedOrigins = [
+  "https://nex-bank.pages.dev", // Cloudflare Pages frontend
+  "http://localhost:4200", // Local dev frontend
+  "http://127.0.0.1:8080", // Local dev API (optional)
+];
+
+// Configure CORS
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error(`CORS policy: ${origin} not allowed`));
+      }
+    },
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "x-authentication-token"],
+    credentials: false, // Set to true if using cookies
+  })
+);
+
+// Handle preflight requests explicitly
+app.options("*", cors()); // Respond to OPTIONS requests for all routes
 
 app.use(bodyParser.json()); // Support JSON-encoded bodies
 app.use(bodyParser.urlencoded({ extended: false })); // Support URL-encoded bodies
