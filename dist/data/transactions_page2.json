@@ -1,0 +1,190 @@
+{
+  "days": [
+    {
+      "id": "2022-10-25",
+      "transactions": [
+        {
+          "id": 1,
+          "timestamp": "2022-12-25T23:30:45.123Z",
+          "amount": -99.87,
+          "currencyCode": "EUR",
+          "description": "Some interesting description",
+          "otherParty": {
+            "name": "Restaurant A",
+            "iban": "NL00RABO0128356789"
+          }
+        },
+        {
+          "id": 2,
+          "timestamp": "2022-12-25T12:45:47.123Z",
+          "amount": -50,
+          "currencyCode": "EUR",
+          "description": "ATM"
+        }
+      ]
+    },
+    {
+      "id": "2022-10-20",
+      "transactions": [
+        {
+          "id": 1,
+          "timestamp": "2022-11-15T14:30:47.123Z",
+          "amount": 17.95,
+          "currencyCode": "USD",
+          "currencyRate": 1.173628,
+          "description": "Some interesting description",
+          "otherParty": {
+            "name": "Mister XX",
+            "iban": "NL00RABO0123456789"
+          }
+        },
+        {
+          "id": 2,
+          "timestamp": "2022-11-15T12:45:47.123Z",
+          "amount": -25.95,
+          "currencyCode": "EUR",
+          "description": "Some other interesting description",
+          "otherParty": {
+            "name": "Miss Y",
+            "iban": "NL00RABO9876543210"
+          }
+        },
+        {
+          "id": 3,
+          "timestamp": "2022-11-15T10:30:47.123Z",
+          "amount": 3456.67,
+          "currencyCode": "EUR",
+          "description": "Finally payday",
+          "otherParty": {
+            "name": "Company Z",
+            "iban": "NL00RABO3210654789"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2022-10-15",
+      "transactions": [
+        {
+          "id": 1,
+          "timestamp": "2022-10-15T18:30:45.123Z",
+          "amount": -120.5,
+          "currencyCode": "EUR",
+          "description": "Dinner at Restaurant D",
+          "otherParty": {
+            "name": "Restaurant D",
+            "iban": "NL00RABO0123456789"
+          }
+        },
+        {
+          "id": 2,
+          "timestamp": "2022-10-15T14:45:47.123Z",
+          "amount": -45.0,
+          "currencyCode": "EUR",
+          "description": "Taxi Ride",
+          "otherParty": {
+            "name": "City Taxi",
+            "iban": "NL00RABO9876543210"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2022-10-14",
+      "transactions": [
+        {
+          "id": 1,
+          "timestamp": "2022-10-14T10:30:47.123Z",
+          "amount": 200.0,
+          "currencyCode": "USD",
+          "description": "Freelance Payment",
+          "otherParty": {
+            "name": "Client B",
+            "iban": "NL00RABO1234567890"
+          }
+        },
+        {
+          "id": 2,
+          "timestamp": "2022-10-14T08:45:47.123Z",
+          "amount": -75.95,
+          "currencyCode": "EUR",
+          "description": "Groceries",
+          "otherParty": {
+            "name": "Supermarket",
+            "iban": "NL00RABO8765432109"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2022-10-13",
+      "transactions": [
+        {
+          "id": 1,
+          "timestamp": "2022-10-13T17:12:47.123Z",
+          "amount": -38.95,
+          "currencyCode": "EUR",
+          "description": "Gym Membership",
+          "otherParty": {
+            "name": "Fitness Club",
+            "iban": "NL00RABO0123456789"
+          }
+        },
+        {
+          "id": 2,
+          "timestamp": "2022-10-13T15:45:00.123Z",
+          "amount": -987.65,
+          "currencyCode": "EUR",
+          "description": "Monthly Rent",
+          "otherParty": {
+            "name": "Landlord",
+            "iban": "NL00RABO9876543210"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2022-10-12",
+      "transactions": [
+        {
+          "id": 1,
+          "timestamp": "2022-10-12T11:56:12.123Z",
+          "amount": 123.45,
+          "currencyCode": "EUR",
+          "description": "Payment Request",
+          "otherParty": {
+            "name": "Friend A",
+            "iban": "NL00RABO3210654789"
+          }
+        },
+        {
+          "id": 2,
+          "timestamp": "2022-10-12T09:39:59.123Z",
+          "amount": -58.47,
+          "currencyCode": "EUR",
+          "description": "Coffee Shop",
+          "otherParty": {
+            "name": "Cafe B",
+            "iban": "NL00RABO0123764789"
+          }
+        }
+      ]
+    }
+  ],
+  "account": {
+    "id": 1,
+    "name": "Tom Enricks",
+    "iban": "NL00RABO0123456789",
+    "balance": 1234.56,
+    "currencyCode": "EUR",
+    "currencyRate": 1.173628
+  },
+  "pagination": {
+    "currentPage": 2,
+    "pageSize": 2,
+    "totalItems": 4,
+    "totalPages": 3,
+    "hasNext": true,
+    "hasPrevious": true
+  }
+}

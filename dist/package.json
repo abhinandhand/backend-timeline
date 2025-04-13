@@ -1,0 +1,22 @@
+{
+    "name": "express-server",
+    "version": "0.0.1",
+    "license": "",
+    "main": "server.js",
+    "scripts": {
+        "start:mac": "tsc && cp data/* dist/ && node dist/server.js",
+        "start:windows": "tsc && xcopy data dist\\ /E /I && node dist\\server.js",
+        "build": "tsc && cp -r data dist/",
+        "start": "node dist/server.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.3",
+        "cors": "^2.8.5",
+        "express": "^4.21.2"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/node": "18.11.9",
+        "typescript": "4.8.4"
+    }
+}
