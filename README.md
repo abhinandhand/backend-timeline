@@ -1,6 +1,6 @@
 # NodeJS backend for the Rabobank Frontend assignment
 
-This backend is a real plain express service to serve one file of transactions. To see the model of the transaction
+This backend is a real plain express service to serve one file of transactions. To see the model of the transactio
 feel free to take a look into the `transactions.json` file.
 
 - Start with npm install ```npm install```
