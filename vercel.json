@@ -8,14 +8,14 @@
   ],
   "routes": [
     {
-      "src": "/api/transactions",
+      "src": "/api/(.*)",
       "methods": ["OPTIONS", "GET", "POST"],
       "dest": "dist/server.js"
     },
     {
       "src": "/(.*)",
-      "status": 404,
-      "dest": "/api/transactions"
+      "methods": ["OPTIONS", "GET", "POST"],
+      "dest": "dist/server.js"
     }
   ]
 }
