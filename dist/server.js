@@ -10,6 +10,7 @@ const app = (0, express_1.default)();
 const allowedOrigins = [
     "http://localhost:4200",
     "http://127.0.0.1:8081",
+    "https://nex-bank.pages.dev",
     process.env.RENDER_EXTERNAL_URL || "https://your-app.onrender.com", // Add Render URL
 ];
 app.use((0, cors_1.default)({
