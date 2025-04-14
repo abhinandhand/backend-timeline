@@ -8,12 +8,14 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/transactions",
       "methods": ["OPTIONS", "GET", "POST"],
-      "dest": "dist/server.js",
-       "headers": {
-        "Access-Control-Allow-Origin": "*"
-      }
+      "dest": "dist/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/api/transactions"
     }
   ]
 }
