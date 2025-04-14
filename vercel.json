@@ -10,22 +10,12 @@
     {
       "src": "/api/(.*)",
       "methods": ["OPTIONS", "GET"],
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-        "Access-Control-Allow-Headers": "X-Authentication-Token"
-      },
       "dest": "dist/server.js"
     },
     {
       "src": "/(.*)",
       "dest": "dist/server.js",
-      "methods": ["OPTIONS", "GET"],
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-        "Access-Control-Allow-Headers": "X-Authentication-Token"
-      }
+      "methods": ["OPTIONS", "GET"]
     }
   ]
 }
