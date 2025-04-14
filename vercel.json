@@ -2,20 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/server.js",
+      "src": "dist/server.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "methods": ["OPTIONS", "GET"],
-      "dest": "dist/server.js"
+      "methods": ["OPTIONS", "GET", "POST"],
+      "dest": "dist/server.ts",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
     },
     {
       "src": "/(.*)",
-      "dest": "dist/server.js",
-      "methods": ["OPTIONS", "GET"]
+      "methods": ["OPTIONS", "GET", "POST"],
+      "dest": "dist/server.ts",
+       "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
     }
   ]
 }
