@@ -1,18 +1,18 @@
-
 {
   "version": 2,
   "builds": [
     {
-      "src": "dist/server.js",
+      "src": "dist/server.js"
+    }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
       "methods": ["OPTIONS"],
       "headers": {
-        "Access-Control-Allow-Origin": "https://nex-bank.pages.dev",
+        "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, X-Authentication-Token"
+        "Access-Control-Allow-Headers": "X-Authentication-Token"
       },
       "dest": "dist/server.js"
     },
@@ -20,9 +20,9 @@
       "src": "/(.*)",
       "dest": "dist/server.js",
       "headers": {
-        "Access-Control-Allow-Origin": "https://nex-bank.pages.dev",
+        "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, x-authentication-token"
+        "Access-Control-Allow-Headers": "X-Authentication-Token"
       }
     }
   ]
