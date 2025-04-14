@@ -1,7 +1,7 @@
 {
   "days": [
     {
-      "id": "2025-04-11",
+      "id": "2025-04-14",
       "transactions": [
         {
           "id": 1,
@@ -15,10 +15,23 @@
             "iban": "NL00RABO0123456789"
           }
         }
+      ],
+      {
+          "id": 2,
+          "timestamp": "2025-04-11T14:30:47.123Z",
+          "amount": 200.95,
+          "currencyCode": "USD",
+          "currencyRate": 1.173628,
+          "description": "Some interesting description",
+          "otherParty": {
+            "name": "Restaurnt ABC",
+            "iban": "NL00RABO0123456789"
+          }
+        }
       ]
     },
     {
-      "id": "2025-11-04",
+      "id": "2025-04-13",
       "transactions": [
         {
           "id": 1,
