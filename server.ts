@@ -8,12 +8,11 @@ const app = express();
 
 // CORS middleware
 const allowCors = (fn: (req: Request, res: Response) => void) => async (req: Request, res: Response) => {
-  res.setHeader("Access-Control-Allow-Credentials", "true");
   res.setHeader("Access-Control-Allow-Origin", "https://nex-bank.pages.dev"); // Restrict to your frontend
-  res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS,PATCH,DELETE,POST,PUT");
+  res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS,POST");
   res.setHeader(
     "Access-Control-Allow-Headers",
-    "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, x-authentication-token"
+    "Content-Type, X-Authentication-Token"
   );
   if (req.method === "OPTIONS") {
     res.status(200).end();
@@ -30,7 +29,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get(
   "/",
   allowCors((req: Request, res: Response) => {
-    console.log(req.body);
     console.log("status success");
     res.send("OK");
   })
